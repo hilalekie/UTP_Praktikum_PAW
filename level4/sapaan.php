@@ -1,3 +1,9 @@
 <?php
 // Level 4: Kerjakan mulai darisini
-echo "<p>Selamat datang di Kantin Pesawat The Skeld!</p>";
+if (isset($_COOKIE["nama_pelanggan"])) {
+    echo "<p>Selamat datang kembali di Cafeteria, " . htmlspecialchars($_COOKIE["nama_pelanggan"]) . "! Tetap waspada terhadap Impostor!</p>";
+    return; 
+}
+    
+
+

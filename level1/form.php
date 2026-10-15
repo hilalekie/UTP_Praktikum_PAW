@@ -27,11 +27,28 @@
 </table>
 
 <h2>Form Pemesanan</h2>
+
 <form action="proses.php" method="post">
-    Nama: <!-- Input Text Nama -->
-    Ransum: <!-- Input Pilihan Ransum -->
-    Jumlah: <!-- Input Jumlah -->
-    Kategori Pelanggan: <!-- Input Pilihan Jenis Pelanggan -->
+    Nama:
+     <input type="text" name="nama" required><br><br>
+
+     Ransum: 
+    <select name="menu">
+        <option value="Pizza Segitiga Polus">Pizza Segitiga Polus</option>
+        <option value="Susu Elektrik Electrical">Susu Elektrik Electrical</option>
+        <option value="Space Donut Oxygen">Space Donut Oxygen</option>
+        <option value="Jus Berry MedBay">Jus Berry MedBay</option>
+        <option value="Emergency Steak Navigation">Emergency Steak Navigation</option>
+    </select><br><br>
     
-    <!-- Submit -->
+    Jumlah Pesanan:
+    <input type="number" name="jumlah" required><br><br>
+
+    Identitas Kru:
+    <select name="kategori">
+        <option value="Crewmate">Crewmate</option>
+        <option value="Impostor">Impostor</option>
+    </select><br><br>
+    
+    <button type="submit">Pesan</button>
 </form>
